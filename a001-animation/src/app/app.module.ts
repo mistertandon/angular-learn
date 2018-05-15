@@ -3,15 +3,17 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { HeroListComponent } from './hero-list/hero-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BrowserAnimationsModule
+    HeroListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
