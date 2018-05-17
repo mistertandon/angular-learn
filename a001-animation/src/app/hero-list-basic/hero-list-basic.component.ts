@@ -11,8 +11,7 @@ import { HeroService } from './../services/hero.service';
   styleUrls: ['./hero-list-basic.component.css'],
   animations:
     [
-      trigger(
-        'herostatus',
+      trigger('heroState',
         [
           state(ACTIVE, style(
             {
@@ -24,8 +23,8 @@ import { HeroService } from './../services/hero.service';
               backgroundColor: '#FF94A9'
             })
           ),
-          transition(`${ACTIVE} => ${INACTIVE}`, animate('100ms easy-in')),
-          transition(`${INACTIVE} => ${ACTIVE}`, animate('100ms easy-out'))
+          transition(`${ACTIVE} => ${INACTIVE}`, animate("100ms", style({ backgroundColor: '#FF94A9' }))),
+          transition(`${INACTIVE} => ${ACTIVE}`, animate("100ms", style({ backgroundColor: "#79FF4D" })))
         ]
       )
     ],

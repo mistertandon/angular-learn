@@ -3,11 +3,11 @@ import { ACTIVE, INACTIVE } from './hero.constant';
 
 export class Hero {
 
-  constructor(public name: string, public status: string) { }
+  constructor(public name: string, public state: string) { }
 
   public toggleState(): void {
 
-    this.status = this.status === INACTIVE ? ACTIVE : INACTIVE;
+    this.state = this.state === INACTIVE ? ACTIVE : INACTIVE;
   }
 }
 

@@ -22,7 +22,7 @@ export class HeroService {
   public addActiveHero(): void {
 
     let hero: Hero = HERO_INSTANCE[this.heros.length];
-    hero.status = ACTIVE;
+    hero.state = ACTIVE;
 
     this.heros.push(hero);
   }
@@ -30,7 +30,7 @@ export class HeroService {
   public addInactiveHero(): void {
 
     let hero: Hero = HERO_INSTANCE[this.heros.length];
-    hero.status = INACTIVE;
+    hero.state = INACTIVE;
 
     this.heros.push(hero);
   }
@@ -44,6 +44,4 @@ export class HeroService {
 
     this.heros.length -= 1;
   }
-
-
 }
