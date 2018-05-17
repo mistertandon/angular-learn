@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { HeroService } from './services/hero.service';
 import { HeroListBasicComponent } from './hero-list-basic/hero-list-basic.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +15,7 @@ import { HeroListBasicComponent } from './hero-list-basic/hero-list-basic.compon
     BrowserModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
