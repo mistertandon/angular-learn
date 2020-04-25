@@ -23,3 +23,9 @@ emp_ii.display_salary()
 emp_iii = Employee('Jiyanshi', 'Tandon', 100)
 emp_iii.apply_raise()
 emp_iii.display_salary()
+
+"""
+How do we may use classmethod as alternative constructor
+"""
+emp_info = "praveen-tandon-100"
+emp_iv = Employee.from_string(emp_info)
