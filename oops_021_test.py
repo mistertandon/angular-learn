@@ -1,4 +1,4 @@
-from oops_02 import Employee
+from oops_020_variables import Employee
 
 """
 Instance variables [like name, last_name, salary] can be unique for each instances.
