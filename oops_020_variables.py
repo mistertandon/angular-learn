@@ -47,5 +47,4 @@ class Employee:
 """
 1. Regular methods in a class automatically take instance <self> as the first argument,
    by convetion we call it as <self>
-2
 """
