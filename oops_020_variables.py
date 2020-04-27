@@ -4,11 +4,11 @@ class Employee:
     Class variables are variables that are shared among all instances of class.
     """
 
-    full_name = None
+    full_name: str = None
 
-    email = None
+    email: str = None
 
-    raise_amount = 1.05
+    raise_amount: float = 1.05
 
     def __init__(self, name, last_name, salary):
 
@@ -17,9 +17,9 @@ class Employee:
         self.salary = salary
 
         self.create_email_id()
-        self.get_full_name()
+        self.set_full_name()
 
-    def get_full_name(self):
+    def set_full_name(self):
 
         self.full_name = "{} {}".format(self.name, self.last_name)
 

@@ -1,8 +1,8 @@
 class Employee:
 
-    full_name = None
+    full_name: str = None
 
-    email = None
+    email: str = None
 
     def __init__(self, name, last_name):
 
